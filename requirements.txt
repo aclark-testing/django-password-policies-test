@@ -1,1 +1,1 @@
--e git+git@github.com:tarak/django-password-policies.git#egg=django-password-policies
+-e git+git@github.com:aclark4life/django-password-policies.git#egg=django-password-policies

@@ -82,3 +82,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Password change required after 90 days, via django-password-policies
+PASSWORD_DURATION_SECONDS = 60 * 60 * 24 * 90
