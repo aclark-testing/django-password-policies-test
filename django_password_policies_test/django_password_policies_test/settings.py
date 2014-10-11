@@ -87,3 +87,15 @@ STATIC_URL = '/static/'
 
 # Password change required after 90 days, via django-password-policies
 PASSWORD_DURATION_SECONDS = 60 * 60 * 24 * 90
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.tz',
+    'django.contrib.messages.context_processors.messages',
+    # Password change required after 90 days, via django-password-policies
+    'password_policies.context_processors.password_status',
+)
