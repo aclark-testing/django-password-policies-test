@@ -47,6 +47,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Password change required after 90 days, via django-password-policies
+    'password_policies.middleware.PasswordChangeMiddleware',
 )
 
 ROOT_URLCONF = 'django_password_policies_test.urls'
