@@ -99,3 +99,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     # Password change required after 90 days, via django-password-policies
     'password_policies.context_processors.password_status',
 )
+
+# https://github.com/tarak/django-password-policies/issues/17
+SESSION_SERIALIZER='django.contrib.sessions.serializers.PickleSerializer'
